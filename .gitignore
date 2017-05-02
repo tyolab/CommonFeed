@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##
 **/build/*
 
@@ -56,3 +57,6 @@ captures/
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
+=======
+/build
+>>>>>>> 73be3ab... source file import

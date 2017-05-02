@@ -17,10 +17,13 @@ public class Feed {
         return lastModifiedDate;
     }
 
+<<<<<<< HEAD
     public void setLastModifiedDate(long lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
     }
 
+=======
+>>>>>>> 73be3ab... source file import
     public void setList(List list) {
         this.list = list;
     }
