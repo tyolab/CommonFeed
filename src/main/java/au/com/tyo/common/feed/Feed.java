@@ -17,6 +17,10 @@ public class Feed {
         return lastModifiedDate;
     }
 
+    public void setLastModifiedDate(long lastModifiedDate) {
+        this.lastModifiedDate = lastModifiedDate;
+    }
+
     public void setList(List list) {
         this.list = list;
     }
