@@ -8,7 +8,7 @@ import au.com.tyo.parser.Sgml;
 import au.com.tyo.parser.SgmlNode;
 import au.com.tyo.parser.XML;
 import au.com.tyo.services.HttpPool;
-import au.com.tyo.utils.DateUtils;
+import au.com.tyo.utils.SimpleDateUtils;
 import au.com.tyo.utils.StringUtils;
 
 
@@ -157,8 +157,8 @@ public class RSS extends Feed implements Iterable<Channel> {
 	//								item.processDescription();
 									
 									if (needsOnlyLatest) {
-										Calendar yesterday = DateUtils.getGmtCalendar000();
-										yesterday.setTimeInMillis(yesterday.getTimeInMillis() - DateUtils.ONE_DAY_IN_MILLIS);
+										Calendar yesterday = SimpleDateUtils.getGmtCalendar000();
+										yesterday.setTimeInMillis(yesterday.getTimeInMillis() - SimpleDateUtils.ONE_DAY_IN_MILLIS);
 										if (item.getPubDate().before(yesterday))
 											break;
 									}
